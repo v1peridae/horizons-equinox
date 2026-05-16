@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Hershey";
+  src: url("/fonts/Hershey-Noailles-Futura-Duplex-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hershey";
+  src: url("/fonts/Hershey-Noailles-Futura-Duplex-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karim";
+  src: url("/fonts/Karim-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-futura: "Hershey", system-ui, sans-serif;
+  --font-karim: "Karim", system-ui, sans-serif;
+}
