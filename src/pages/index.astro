@@ -54,7 +54,7 @@ import Layout from '../layouts/Layout.astro';
 
 <section class="bg-black text-white py-20 px-4">
     <h1 class="text-center font-karim text-[8.5rem] mb-8">FAQs</h1>
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+    <div class="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-x-16 gap-y-12">
         <div class="flex flex-col gap-y-12">
             <div>
                 <h2 class="font-karim text-5xl font-bold mb-3">What is Hack Club</h2>
@@ -62,14 +62,12 @@ import Layout from '../layouts/Layout.astro';
                     Hack Club is a global 501(c)(3) nonprofit based in the United States built by teens to support teen coders and we’ve run 500+ hackathons and events worldwide online and in-person.
                 </p>
             </div>
-
             <div>
                 <h2 class="font-karim text-5xl font-bold mb-3">Who can attend?</h2>
                 <p class="font-futura text-2xl font-normal leading-tight">
                     Teenagers aged 13–18 from any part of the world!
                 </p>
             </div>
-
             <div>
                 <h2 class="font-karim text-5xl font-bold mb-3">How do stipends work?</h2>
                 <p class="font-futura text-2xl font-normal leading-tight">
@@ -78,8 +76,9 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
 
-        <div class="flex flex-col gap-y-12 md:pl-16 md:border-l md:border-white">
-            <div>
+        <div class="flex flex-col gap-y-12 relative">
+            <div class="absolute -left-8 top-0 bottom-0 w-px bg-white hidden md:block"></div>
+               <div>
                 <h2 class="font-karim text-5xl font-bold mb-3">How do I qualify?</h2>
                 <p class="font-futura text-2xl font-normal leading-tight">
                     There are 3 simple steps:<br>
@@ -88,21 +87,20 @@ import Layout from '../layouts/Layout.astro';
                     3. You're qualified!
                 </p>
             </div>
-
             <div>
                 <h2 class="font-karim text-5xl font-bold mb-3">Where can I find travel information?</h2>
                 <p class="font-futura text-2xl font-normal leading-tight">
                     We'll have a travel guide with visa, flight and arrival/departure details added here before June :)
                 </p>
             </div>
-
 			<div>
                 <h2 class="font-karim text-5xl font-bold mb-3">I have more questions</h2>
                 <p class="font-futura text-2xl font-normal leading-tight">
                     You can reach out to us via equinox@horizons.hackclub.com or have a Zoom call with one of the organisers :)
                 </p>
             </div>
-            <div>
+        </div>
+    </div>
 </section>
 
 
