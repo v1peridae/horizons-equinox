@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 	<header class="text-white">
 	<img class="w-full mx-auto" src="/header_bg.png" alt="Horizons Equinox Background" />
-    <div class="absolute inset-0 bg-linear-to-t from-black via-black/70 to-transparent"></div>
+    <div class="absolute inset-0 bg-linear-to-t from-black via-black/90 to-transparent"></div>
 		
 	<div class="absolute top-1/8 left-1/2 -translate-x-1/2 w-full text-center">
         <img class="w-1/2 mx-auto mb-4" src="/equinox_logo.png" alt="Horizons Equinox Logo" />
@@ -26,6 +26,7 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<section class="max-w-5xl mx-auto">
+            <img src="/asset4.png" alt="ankh" class="absolute -left-4 top-250 w-[24%]">
 			<p class="font-futura text-5xl leading-tight mb-16">
 				This August, we are bringing together 80+ teen coders from all around the world to join us for a free 3-day hackathon adventure in Egypt, <b>Horizons Equinox</b>.
 			</p>
@@ -43,17 +44,61 @@ import Layout from '../layouts/Layout.astro';
 	<p class="font-futura text-4xl leading-tight">Create something new, get to see the pyramids of Giza up-close, code with new friends, ride a cruise down the Nile, and get immersed in Egyptian culture all in the span of 3 days!
 	</p>
 <section>
-	<!-- image of how to qualify -->
+    <img src="/howtoqual.png" alt="how to qualify" class="w-70% mx-auto">
 </section >
-<section class="mt-10">
-	<img src="/cats.png" alt="Cats" class="w-3/4 mx-auto" />
 
+<section class="max-w-6xl mx-auto mt-20 mb-12 relative px-4">
 
-	<!-- past hack club ebents -->
+    <h1 class="text-center font-karim text-[8.5rem] mb-16 leading-none">previous events</h1>
+        
+    <div class="w-screen relative left-1/2 -translate-x-1/2 overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar py-2">
+        
+        <div class="flex gap-8 md:gap-12 w-max px-[5vw] md:px-[10vw] mx-auto">
+            <div class="w-[85vw] md:w-[400px] shrink-0 snap-center flex flex-col items-center -rotate-2">
+                <div class="w-full shadow-xl">
+                    <img src="/counterspell.webp" alt="Counterspell" class="w-full aspect-[3/2] object-cover bg-black block" />
+                </div>
+                <div class="mt-6 text-center px-2">
+                    <h3 class="font-futura text-4xl mb-2"><a href="counterspell.hackclub.com">Counterspell</a></h3>
+                </div>
+            </div>
+
+            <div class="w-[85vw] md:w-[400px] shrink-0 snap-center flex flex-col items-center rotate-2">
+                <div class="w-full shadow-xl">
+                    <img src="/shipwrecked.webp" alt="Shipwrecked" class="w-full aspect-[3/2] object-cover bg-black block" />
+                </div>
+                <div class="mt-6 text-center px-2">
+                    <h3 class="font-futura text-4xl mb-2"><a href="shipwrecked.hackclub.com">Shipwrecked</a></h3>
+                </div>
+            </div>
+
+            <div class="w-[85vw] md:w-[400px] shrink-0 snap-center flex flex-col items-center -rotate-2">
+                <div class="w-full shadow-xl">
+                    <img src="/overglade.webp" alt="Overglade" class="w-full aspect-[3/2] object-cover bg-black block" />
+                </div>
+                <div class="mt-6 text-center px-2">
+                    <h3 class="font-futura text-4xl mb-2"><a href="overglade.hackclub.com">Overglade</a></h3>
+                </div>
+            </div>
+
+            <div class="w-[85vw] md:w-[400px] shrink-0 snap-center flex flex-col items-center rotate-2">
+                <div class="w-full shadow-xl">
+                    <img src="/undercity.webp" alt="Undercity" class="w-full aspect-[3/2] object-cover bg-black block" />
+                </div>
+                <div class="mt-6 text-center px-2">
+                    <h3 class="font-futura text-4xl mb-2"><a href="undercity.hackclub.com">Undercity</a></h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
+    <img src="/cats.png" alt="Cats" class="w-3/4 mx-auto mb-2" />
 
-<section class="bg-black text-white py-20 px-4">
+
+<section class="bg-black text-white py-10 px-4 mb-20 pt-0">
     <h1 class="text-center font-karim text-[8.5rem] mb-8">FAQs</h1>
+    <img src="/asset2.png" class="absolute w-[25%] right-5 bottom-300" alt="horus">
     <div class="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-x-16 gap-y-12">
         <div class="flex flex-col gap-y-12">
             <div>
@@ -104,6 +149,10 @@ import Layout from '../layouts/Layout.astro';
 </section>
 
 
-	</main>
+<footer class="relative mx-auto items-center text-center pb-4">
+    <img src="asset3.png" alt="footer" class="relative mx-auto w-[50%]">
+    <p class="font-karim text-3xl font-bold mb-3">made with love by teens at hack club</p>
+    <img src="footer.png" alt="footer" class="absolute -right-34 -bottom-20 w-[70%]">
+</footer>
 
 </Layout>
