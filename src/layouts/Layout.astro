@@ -7,26 +7,38 @@ import "../styles/global.css";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Horizons Equinox | 14-16 Aug - Cairo, Egypt</title>
+		<meta name="description" content="Code for 35 hours, get invited to a free 3-day hackathon adventure in Cairo, Egypt." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://equinox.hackclub.com/" /> 
+		<meta property="og:title" content="Horizons Equinox | 14-16 Aug - Cairo, Egypt" />
+		<meta property="og:description" content="Code for 35 hours, get invited to a free 3-day hackathon adventure in Cairo, Egypt." />
+		<meta property="og:image" content="https://files.catbox.moe/nkhmns.png" /> 
 	</head>
 	<body>
 		<div class="overflow-x-hidden">
-  <slot />
-</div>
+			<slot />
+		</div>
 	</body>
 </html>
+	
 
-
-
-<style>
+<style is:global>
 	html,
 	body {
 		margin: 0;
 		width: 100%;
 		height: 100%;
 		background-color: #000;
+	}
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;  
+		scrollbar-width: none;  
 	}
 </style>
