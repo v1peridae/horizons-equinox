@@ -3,19 +3,19 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-		<header class="text-white relative min-h-[50vh] flex flex-col justify-center py-16 md:py-24">
+	<header class="text-white relative min-h-screen flex flex-col justify-center align-center py-16 md:py-24 pb-36 md:pb-40">
 		<img class="absolute inset-0 w-full h-full object-cover z-0" src="/header_bg.webp" alt="Horizons Equinox Background" />
 		<div class="absolute inset-0 bg-linear-to-t from-black via-black/83 to-transparent z-0"></div>
-			
+
 		<div class="relative z-10 w-full text-center px-4 mt-8 md:mt-12">
 			<img class="w-3/4 md:w-1/2 mx-auto mb-4" src="/equinox_logo.webp" alt="Horizons Equinox Logo" />
-			
+
 			<div class="text-white">
 				<h1 class="font-futura text-2xl md:text-[3rem] md:leading-tight font-bold mb-2 md:mb-4">August 14-16 @ The GrEEK Campus, Cairo, Egypt</h1>
 				<h2 class="font-futura text-lg md:text-3xl mt-2 font-normal">Code for 35 hours, <br class="hidden md:block" /> Get invited to a 3-day hackathon adventure</h2>
 			</div>
-			
-			<div class="relative mt-8 md:mt-12 flex justify-center">
+
+			<div class="relative mt-4 md:mt-8 flex justify-center">
 				<div class="p-0.5 rounded-full bg-[#EC7A0F]">
 					<button class="font-futura text-xl md:text-2xl font-bold bg-black text-[#ec7a0f] px-8 md:px-14 py-2 rounded-full block">
 						<a href="https://horizons.hackclub.com">
@@ -25,6 +25,12 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 		</div>
+
+		<div class="absolute inset-x-0 bottom-10 md:bottom-12 z-10 flex justify-center">
+			<img class="w-12 md:w-14 h-12 md:h-14 animate-bounce" src="/arrows.webp" alt="Pointer Arrows" />
+		</div>
+
+
 	</header>
 		<main class="bg-black text-white px-4 pt-12 md:pt-10 pb-0 text-center relative overflow-hidden">
 
@@ -61,20 +67,24 @@ import Layout from '../layouts/Layout.astro';
 				<div id="events-track" class="flex gap-6 md:gap-12 w-max items-center">
 					
 					<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2">
-						<div class="w-full shadow-xl">
-							<img src="counterspell.webp" alt="Counterspell" class="w-full aspect-[3/2] object-cover bg-black block" />
-						</div>
+						<a href="https://daydream.hackclub.com" class="w-full shadow-xl">
+							<img src="new-images/daydream.webp" alt="Daydream" class="w-full aspect-3/2 object-cover bg-black block" />
+						</a>
 						<div class="mt-2 md:mt-2 text-center px-2">
-							<h3 class="font-futura text-2xl md:text-5xl mb-2"><a href="https://counterspell.hackclub.com">Counterspell</a></h3>
+							<a href="https://daydream.hackclub.com" class="flex justify-center w-full">
+								<img src="new-images/daydream-logo.webp" alt="Daydream Logo" class="w-1/2 object-cover inset-0 ">
+							</a>
 						</div>
 					</div>
 
-					<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:rotate-2">
-						<div class="w-full shadow-xl">
-							<img src="/shipwrecked.webp" alt="Shipwrecked" class="w-full aspect-[3/2] object-cover bg-black block" />
-						</div>
+					<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2">
+						<a href="https://shipwrecked.hackclub.com" class="w-full shadow-xl">
+							<img src="new-images/shipwrecked.webp" alt="Daydream" class="w-full aspect-3/2 object-cover bg-black block" />
+						</a>
 						<div class="mt-2 md:mt-2 text-center px-2">
-							<h3 class="font-futura text-2xl md:text-5xl mb-2"><a href="https://shipwrecked.hackclub.com">Shipwrecked</a></h3>
+							<a href="https://shipwrecked.hackclub.com" class="flex justify-center w-full">
+								<img src="new-images/shipwrecked-logo.webp" alt="Daydream Logo" class="w-1/2 object-cover inset-0">
+							</a>
 						</div>
 					</div>
 
@@ -118,73 +128,73 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<script>
-			document.addEventListener("DOMContentLoaded", () => {
-				const scrollContainer = document.getElementById('events-scroll-container');
-				const track = document.getElementById('events-track');
-				const originalCards = Array.from(track.children);
-				originalCards.forEach(card => track.appendChild(card.cloneNode(true)));
-				originalCards.forEach(card => track.appendChild(card.cloneNode(true)));
+		<!--<script>-->
+		<!--	document.addEventListener("DOMContentLoaded", () => {-->
+		<!--		const scrollContainer = document.getElementById('events-scroll-container');-->
+		<!--		const track = document.getElementById('events-track');-->
+		<!--		const originalCards = Array.from(track.children);-->
+		<!--		originalCards.forEach(card => track.appendChild(card.cloneNode(true)));-->
+		<!--		originalCards.forEach(card => track.appendChild(card.cloneNode(true)));-->
 
-				let autoScrollInterval;
-				let isJumping = false;
+		<!--		let autoScrollInterval;-->
+		<!--		let isJumping = false;-->
 
-				function getSetWidth() {
-					return track.scrollWidth / 3;
-				}
+		<!--		function getSetWidth() {-->
+		<!--			return track.scrollWidth / 3;-->
+		<!--		}-->
 
-				requestAnimationFrame(() => {
-					scrollContainer.scrollLeft = getSetWidth();
-				});
+		<!--		requestAnimationFrame(() => {-->
+		<!--			scrollContainer.scrollLeft = getSetWidth();-->
+		<!--		});-->
 
-				scrollContainer.addEventListener('scroll', () => {
-					if (isJumping) return;
+		<!--		scrollContainer.addEventListener('scroll', () => {-->
+		<!--			if (isJumping) return;-->
 
-					const setWidth = getSetWidth();
-					
-					if (scrollContainer.scrollLeft <= setWidth * 0.5) {
-						isJumping = true;
-						scrollContainer.style.scrollSnapType = 'none'; 
-						scrollContainer.scrollLeft += setWidth;
-						
-						requestAnimationFrame(() => {
-							scrollContainer.style.scrollSnapType = '';
-							isJumping = false;
-						});
-					} 
-					else if (scrollContainer.scrollLeft >= setWidth * 2.5) {
-						isJumping = true;
-						scrollContainer.style.scrollSnapType = 'none';
-						scrollContainer.scrollLeft -= setWidth;
-						
-						requestAnimationFrame(() => {
-							scrollContainer.style.scrollSnapType = '';
-							isJumping = false;
-						});
-					}
-				});
+		<!--			const setWidth = getSetWidth();-->
+		<!--			-->
+		<!--			if (scrollContainer.scrollLeft <= setWidth * 0.5) {-->
+		<!--				isJumping = true;-->
+		<!--				scrollContainer.style.scrollSnapType = 'none'; -->
+		<!--				scrollContainer.scrollLeft += setWidth;-->
+		<!--				-->
+		<!--				requestAnimationFrame(() => {-->
+		<!--					scrollContainer.style.scrollSnapType = '';-->
+		<!--					isJumping = false;-->
+		<!--				});-->
+		<!--			} -->
+		<!--			else if (scrollContainer.scrollLeft >= setWidth * 2.5) {-->
+		<!--				isJumping = true;-->
+		<!--				scrollContainer.style.scrollSnapType = 'none';-->
+		<!--				scrollContainer.scrollLeft -= setWidth;-->
+		<!--				-->
+		<!--				requestAnimationFrame(() => {-->
+		<!--					scrollContainer.style.scrollSnapType = '';-->
+		<!--					isJumping = false;-->
+		<!--				});-->
+		<!--			}-->
+		<!--		});-->
 
-				function startAutoScroll() {
-					autoScrollInterval = setInterval(() => {
-						const cardWidth = originalCards[0].offsetWidth;
-						const gap = window.innerWidth > 768 ? 48 : 24; 
-						
-						scrollContainer.scrollBy({ left: cardWidth + gap, behavior: 'smooth' }); 
-					}, 3000); 
-				}
+		<!--		function startAutoScroll() {-->
+		<!--			autoScrollInterval = setInterval(() => {-->
+		<!--				const cardWidth = originalCards[0].offsetWidth;-->
+		<!--				const gap = window.innerWidth > 768 ? 48 : 24; -->
+		<!--				-->
+		<!--				scrollContainer.scrollBy({ left: cardWidth + gap, behavior: 'smooth' }); -->
+		<!--			}, 3000); -->
+		<!--		}-->
 
-				function stopAutoScroll() {
-					clearInterval(autoScrollInterval);
-				}
+		<!--		function stopAutoScroll() {-->
+		<!--			clearInterval(autoScrollInterval);-->
+		<!--		}-->
 
-				scrollContainer.addEventListener('mouseenter', stopAutoScroll);
-				scrollContainer.addEventListener('mouseleave', startAutoScroll);
-				scrollContainer.addEventListener('touchstart', stopAutoScroll, { passive: true });
-				scrollContainer.addEventListener('touchend', startAutoScroll);
+		<!--		scrollContainer.addEventListener('mouseenter', stopAutoScroll);-->
+		<!--		scrollContainer.addEventListener('mouseleave', startAutoScroll);-->
+		<!--		scrollContainer.addEventListener('touchstart', stopAutoScroll, { passive: true });-->
+		<!--		scrollContainer.addEventListener('touchend', startAutoScroll);-->
 
-				startAutoScroll();
-			});
-		</script>
+		<!--		startAutoScroll();-->
+		<!--	});-->
+		<!--</script>-->
 
 		<img src="/cats.webp" alt="Cats" class="w-[90%] md:w-3/4 mx-auto mb-6 md:mb-2" />
 
