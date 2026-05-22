@@ -40,16 +40,10 @@ import Layout from '../layouts/Layout.astro';
 			</p>
 		</section>
 
-		<section class="max-w-5xl mx-auto px-4 mb-16">
-			<p class="font-futura text-xl md:text-4xl leading-snug md:leading-tight">
-				Create something new, get to see the pyramids of Giza up-close, code with new friends, ride a cruise down the Nile, and get immersed in Egyptian culture all in the span of 3 days!
-			</p>
-		</section>
-
 
 <section class="px-4">
   <div class="relative w-full md:w-[70%] mx-auto">
-    <img src="/background.png" alt="how to qualify" class="w-full block" />
+    <img src="/background.png" alt="how to qualify" class="w-full block select-none pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08] hover:-translate-y-2" />
     <div class="absolute inset-x-0 top-0 flex justify-center">
       <div class="relative w-full">
        <img src="/signup.png" alt="sign up" class="absolute left-0 top-0 block w-[70%] select-none pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08] hover:-translate-y-2"/>
@@ -293,22 +287,33 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 		</section>
-		<section class="w-full flex justify-center mt-10">
-  <a href="https://horizons.hackclub.com?utm_source=equinoxsite" target="_blank" rel="noopener noreferrer" class="flex justify-center w-full">
-    <img src="/calltoaction1.png" alt="sign up" class="relative z-20 w-[60%] md:w-[30%]"/>
+
+
+
+		<section class="w-full flex flex-col items-center">
+			<img src="/asset3.webp" alt="footer decoration" class="relative z-20 w-full max-w-[600px] md:max-w-none md:w-[50%] mt-6 mb-4 md:mb-8"/>
+  <p class="font-futura text-xl md:text-4xl leading-snug md:leading-tight text-center px-20 mx-20">
+    Create something new, get to see the pyramids of Giza up-close, code with new friends,
+    ride a cruise down the Nile, and get immersed in Egyptian culture all in the span of 3 days!
+  </p>
+
+  <a href="https://horizons.hackclub.com?utm_source=equinoxsite" target="_blank" rel="noopener noreferrer" class="pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08]">
+    <img src="/calltoaction1.png" alt="sign up" class="relative z-20 w-[80%] max-w-[520px] md:w-[50%] mx-auto mt-20"/>
   </a>
+  <img src="/asset1.webp" alt="footer decoration" class="relative z-20 w-full max-w-[600px] md:max-w-none md:w-[50%] mt-16"/>
 </section>
+
 		<footer class="w-full">
   <div class="relative w-full overflow-hidden">
     <img
       src="/footer.webp"
       alt="footer bg decoration"
-      class="hidden md:block absolute right-0 bottom-0 w-[80%] md:w-[72%] lg:w-[56%] z-0 pointer-events-none object-right-bottom"
+      class="hidden md:block absolute right-0 bottom-0 w-[80%] md:w-[72%] lg:w-[56%] z-0 pointer-events-none object-bottom-right"
     />
     <div class="relative z-10 min-h-[320px] md:min-h-[420px] lg:min-h-[520px] flex items-end">
-      <div class="px-6 pb-10 md:px-10 md:pb-12 max-w-[50rem] text-left">
-        <h1 class="font-karim text-4xl md:text-[9.5rem] leading-[0.92] mb-5">
-          Join us in Egypt!
+      <div class="px-6 pb-6 md:px-6 md:pb-12 max-w-200 text-left">
+        <h1 class="font-karim text-3xl md:text-[8rem] leading-[0.8] mb-10">
+          See you in Egypt!
         </h1>
         <p class="font-futura text-xl md:text-3xl leading-tight">
           made with &lt;3  by teens @ hack club

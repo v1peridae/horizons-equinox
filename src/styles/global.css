@@ -189,7 +189,3 @@
     transform: translateX(0) rotate(0);
   }
 }
-.shake-logo:hover,
-.shake-logo:focus-visible {
-  animation: logoJitter 520ms ease-in-out infinite;
-}
