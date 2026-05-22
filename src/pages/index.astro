@@ -7,23 +7,20 @@ import Layout from '../layouts/Layout.astro';
 		<img class="absolute inset-0 w-full h-full object-cover z-0" src="/header_bg.webp" alt="Horizons Equinox Background" />
 		<div class="absolute inset-0 bg-linear-to-t from-black via-black/83 to-transparent z-0"></div>
 
-		<div class="relative z-10 w-full text-center px-4 mt-8 md:mt-12">
-			<img class="w-3/4 md:w-1/2 mx-auto mb-4" src="/equinox_logo.webp" alt="Horizons Equinox Logo" />
-
+		<div class="relative z-10 w-full text-center px-4 mt-8 md:mt-12 hero-boot">
+<img class="w-3/4 md:w-1/2 mx-auto mb-4 shake-logo" src="/equinox_logo.webp" alt="Horizons Equinox Logo" tabindex="0"/>
 			<div class="text-white">
 				<h1 class="font-futura text-2xl md:text-[3rem] md:leading-tight font-bold mb-2 md:mb-4">August 14-16 @ The GrEEK Campus, Cairo, Egypt</h1>
 				<h2 class="font-futura text-lg md:text-3xl mt-2 font-normal">Code for 35 hours, <br class="hidden md:block" /> Get invited to a 3-day hackathon adventure</h2>
 			</div>
 
 			<div class="relative mt-4 md:mt-8 flex justify-center">
-				<div class="p-0.5 rounded-full bg-[#EC7A0F]">
-					<button class="font-futura text-xl md:text-2xl font-bold bg-black text-[#ec7a0f] px-8 md:px-14 py-2 rounded-full block">
-						<a href="https://horizons.hackclub.com">
-							get started!
-						</a>
-					</button>
-				</div>
-			</div>
+  <div class="p-0.5 rounded-full bg-[#EC7A0F] inline-block">
+    <a href="https://horizons.hackclub.com" class="font-futura text-xl md:text-2xl font-bold bg-black text-[#ec7a0f] px-8 md:px-14 py-2 rounded-full flex items-center justify-center w-full h-full relative z-10">
+      get started!
+    </a>
+  </div>
+</div>
 		</div>
 
 
@@ -31,9 +28,7 @@ import Layout from '../layouts/Layout.astro';
 		<main id="intro" class="bg-black text-white px-4 pt-12 md:pt-10 pb-0 text-center relative overflow-hidden">
 
 		<section class="max-w-5xl mx-auto relative px-4">
-            <img src="/asset4.webp" alt="ankh" class="hidden md:block absolute -left-30 top-40 w-[24%]">
-			
-			<p class="font-futura text-2xl md:text-5xl leading-snug md:leading-tight mb-10 md:mb-16">
+			<img src="/asset4.webp" alt="ankh" class="hidden md:block absolute -left-30 top-40 w-[24%] shake-on-hover" tabindex="0">			<p class="font-futura text-2xl md:text-5xl leading-snug md:leading-tight mb-10 md:mb-16">
 				This August, we are bringing together 60+ teen coders from all around the world to join us for a free 3-day hackathon adventure in Egypt, <b>Horizons Equinox</b>.
 			</p>
 			<h1 class="font-karim text-6xl md:text-[9.5rem] py-0 mb-2 md:mb-0 text-center">
@@ -51,91 +46,103 @@ import Layout from '../layouts/Layout.astro';
 			</p>
 		</section>
 
-		<section class="px-4">
-			<img src="/howtoqual.webp" alt="how to qualify" class="w-full md:w-[70%] mx-auto">
-		</section>
 
-		<section class="max-w-6xl mx-auto mt-16 md:mt-20 mb-12 py-10 relative px-4">
+<section class="px-4">
+  <div class="relative w-full md:w-[70%] mx-auto">
+    <img src="/background.png" alt="how to qualify" class="w-full block" />
+    <div class="absolute inset-x-0 top-0 flex justify-center">
+      <div class="relative w-full">
+       <img src="/signup.png" alt="sign up" class="absolute left-0 top-0 block w-[70%] select-none pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08] hover:-translate-y-2"/>
+
+<img
+  src="/codefor.png"
+  alt="code for 35"
+  class="absolute right-0 top-0 w-[50%] -translate-y-3 block select-none pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08] hover:-translate-y-2"/></div>
+    </div>
+  </div>
+</section>
+
+		<section class="max-w-6xl mx-auto mb-12 py-10 relative px-4">
 			<h1 class="text-center font-karim text-6xl md:text-[8.5rem] mb-0 md:mb-0 leading-tight">previous events</h1>
 				
 			<div id="events-scroll-container" class="w-screen relative left-1/2 -translate-x-1/2 overflow-x-auto overflow-y-hidden snap-x snap-mandatory no-scrollbar py-4">
 
-				<div id="events-track" class="flex gap-6 md:gap-12 w-max items-start">
-					
-					<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
-						<a href="https://daydream.hackclub.com" class="w-full shadow-xl">
-							<img src="new-images/daydream.webp" alt="Daydream" class="w-full aspect-[3/2] object-cover bg-black block" />
-						</a>
-						<div class="absolute inset-x-0 bottom-0 h-40 md:h-44 flex items-center justify-center px-2">
-							<a href="https://daydream.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
-								<img src="new-images/daydream-logo.webp" alt="Daydream Logo" class="max-h-full w-auto max-w-[65%] object-contain">
-								<h1 class="text-sm md:text-lg w-[95%]">100 high school game jams in 100 cities simultaneously</h1>
-							</a>
-						</div>
-					</div>
+	<div id="events-track" class="flex gap-6 md:gap-12 w-max items-start">
 
-					<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
-						<a href="https://shipwrecked.hackclub.com" class="w-full shadow-xl">
-							<img src="new-images/shipwrecked.webp" alt="Shipwrecked" class="w-full aspect-[3/2] object-cover bg-black block" />
-						</a>
-						<div class="absolute inset-x-0 bottom-0 h-40 md:h-44 flex items-center justify-center px-2">
-							<a href="https://shipwrecked.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-2">
-								<img src="new-images/shipwrecked-logo.webp" alt="Shipwrecked Logo" class="max-h-full w-auto max-w-[65%] object-contain">
-								<h1 class="text-sm md:text-lg w-full">A 4-day hackathon on a private island in Boston</h1>
-							</a>
-						</div>
-					</div>
-
-					<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
-						<a href="https://parthenon.hackclub.com" class="w-full shadow-xl">
-							<img src="new-images/parthenon.webp" alt="Parthenon" class="w-full aspect-[3/2] object-cover bg-black block" />
-						</a>
-						<div class="absolute inset-x-0 bottom-0 h-40 md:h-44 flex items-center justify-center px-2">
-							<a href="https://parthenon.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
-								<img src="new-images/parthenon-logo.webp" alt="Parthenon Logo" class="max-h-full w-auto max-w-[65%] object-contain">
-								<h1 class="text-sm md:text-lg w-[95%]">150 girls went to an all-girl hackathon in NYC</h1>
-							</a>
-						</div>
-					</div>
-
-					<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
-						<a href="https://overglade.hackclub.com" class="w-full shadow-xl">
-							<img src="new-images/overglade.webp" alt="Overglade" class="w-full aspect-[3/2] object-cover bg-black block" />
-						</a>
-						<div class="absolute inset-x-0 bottom-0 h-40 md:h-44 flex items-center justify-center px-2">
-							<a href="https://overglade.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
-								<img src="new-images/overglade-logo.webp" alt="Overglade Logo" class="max-h-full w-auto max-w-[65%] object-contain">
-								<h1 class="text-sm md:text-lg w-[95%]">65 teens gathered for a hyper-immersive game jam in Singapore</h1>
-							</a>
-						</div>
-					</div>
-
-					<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
-						<a href="https://undercity.hackclub.com" class="w-full shadow-xl">
-							<img src="new-images/undercity.webp" alt="Undercity" class="w-full aspect-[3/2] object-cover bg-black block" />
-						</a>
-						<div class="absolute inset-x-0 bottom-0 h-40 md:h-44 flex items-center justify-center px-2">
-							<a href="https://undercity.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
-								<img src="new-images/undercity-logo.webp" alt="Undercity Logo" class="max-h-full w-auto max-w-[65%] object-contain">
-								<h1 class="text-sm md:text-lg w-[95%]">A 4-day hardware hackathon in GitHub HQ, San Francisco</h1>
-							</a>
-						</div>
-					</div>
-
-					<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
-						<a href="https://juice.hackclub.com" class="w-full shadow-xl">
-							<img src="new-images/juice.webp" alt="Juice" class="w-full aspect-[3/2] object-cover bg-black block" />
-						</a>
-						<div class="absolute inset-x-0 bottom-0 h-40 md:h-44 flex items-center justify-center px-2">
-							<a href="https://juice.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
-								<img src="new-images/juice-logo.webp" alt="Juice Logo" class="max-h-full w-auto max-w-[65%] object-contain">
-								<h1 class="text-sm md:text-lg w-[95%]">100 teenagers ran a popup games cafe in Shanghai for a week</h1>
-							</a>
-						</div>
-					</div>
-
-				</div>
+		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+			<a href="https://daydream.hackclub.com" class="w-full shadow-xl">
+				<img src="new-images/daydream.webp" alt="Daydream" class="w-full aspect-[3/2] object-cover bg-black block" />
+			</a>
+			<div class="absolute inset-x-0 bottom-6 md:bottom-8 h-40 md:h-44 flex items-center justify-center px-2">
+				<a href="https://daydream.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
+					<img src="new-images/daydream-logo.webp" alt="Daydream Logo" class="max-h-full w-auto max-w-[65%] object-contain">
+					<h1 class="text-sm md:text-lg w-[95%]">100 high school game jams in 100 cities simultaneously</h1>
+				</a>
 			</div>
+		</div>
+
+		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+			<a href="https://shipwrecked.hackclub.com" class="w-full shadow-xl">
+				<img src="new-images/shipwrecked.webp" alt="Shipwrecked" class="w-full aspect-[3/2] object-cover bg-black block" />
+			</a>
+			<div class="absolute inset-x-0 bottom-6 md:bottom-8 h-40 md:h-44 flex items-center justify-center px-2">
+				<a href="https://shipwrecked.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-2">
+					<img src="new-images/shipwrecked-logo.webp" alt="Shipwrecked Logo" class="max-h-full w-auto max-w-[65%] object-contain">
+					<h1 class="text-sm md:text-lg w-full">A 4-day hackathon on a private island in Boston</h1>
+				</a>
+			</div>
+		</div>
+
+		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+			<a href="https://parthenon.hackclub.com" class="w-full shadow-xl">
+				<img src="new-images/parthenon.webp" alt="Parthenon" class="w-full aspect-[3/2] object-cover bg-black block" />
+			</a>
+			<div class="absolute inset-x-0 bottom-6 md:bottom-8 h-40 md:h-44 flex items-center justify-center px-2">
+				<a href="https://parthenon.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
+					<img src="new-images/parthenon-logo.webp" alt="Parthenon Logo" class="max-h-full w-auto max-w-[65%] object-contain">
+					<h1 class="text-sm md:text-lg w-[95%]">150 girls went to an all-girl hackathon in NYC</h1>
+				</a>
+			</div>
+		</div>
+
+		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+			<a href="https://overglade.hackclub.com" class="w-full shadow-xl">
+				<img src="new-images/overglade.webp" alt="Overglade" class="w-full aspect-[3/2] object-cover bg-black block" />
+			</a>
+			<div class="absolute inset-x-0 bottom-6 md:bottom-8 h-40 md:h-44 flex items-center justify-center px-2">
+				<a href="https://overglade.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
+					<img src="new-images/overglade-logo.webp" alt="Overglade Logo" class="max-h-full w-auto max-w-[65%] object-contain">
+					<h1 class="text-sm md:text-lg w-[95%]">65 teens gathered for a hyper-immersive game jam in Singapore</h1>
+				</a>
+			</div>
+		</div>
+
+		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+			<a href="https://undercity.hackclub.com" class="w-full shadow-xl">
+				<img src="new-images/undercity.webp" alt="Undercity" class="w-full aspect-[3/2] object-cover bg-black block" />
+			</a>
+			<div class="absolute inset-x-0 bottom-6 md:bottom-8 h-40 md:h-44 flex items-center justify-center px-2">
+				<a href="https://undercity.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
+					<img src="new-images/undercity-logo.webp" alt="Undercity Logo" class="max-h-full w-auto max-w-[65%] object-contain">
+					<h1 class="text-sm md:text-lg w-[95%]">A 4-day hardware hackathon in GitHub HQ, San Francisco</h1>
+				</a>
+			</div>
+		</div>
+
+		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+			<a href="https://juice.hackclub.com" class="w-full shadow-xl">
+				<img src="new-images/juice.webp" alt="Juice" class="w-full aspect-[3/2] object-cover bg-black block" />
+			</a>
+			<div class="absolute inset-x-0 bottom-6 md:bottom-8 h-40 md:h-44 flex items-center justify-center px-2">
+				<a href="https://juice.hackclub.com" class="h-full inline-flex items-center justify-center flex-col gap-4">
+					<img src="new-images/juice-logo.webp" alt="Juice Logo" class="max-h-full w-auto max-w-[65%] object-contain">
+					<h1 class="text-sm md:text-lg w-[95%]">100 teenagers ran a popup games cafe in Shanghai for a week</h1>
+				</a>
+			</div>
+		</div>
+
+	</div>
+</div>
 		</section>
 
 		<script>
@@ -211,14 +218,36 @@ import Layout from '../layouts/Layout.astro';
 			});
 		</script>
 
-		<img src="/cats.webp" alt="Cats" class="w-[90%] md:w-3/4 mx-auto mb-6 md:mb-2" />
+		<img src="/cats.webp" alt="Cats" class="cat-click mx-auto mb-6 md:mb-2" data-meow tabindex="0" />
+<audio id="meow-audio" preload="auto">
+	<source src="/audio/meow.mp3" type="audio/mpeg" />
+</audio>
+
+<script is:inline>
+	const audio = document.getElementById('meow-audio');
+	function playMeow() {
+		if (!audio) return;
+		try {
+			audio.currentTime = 0;
+			const p = audio.play();
+			if (p && typeof p.catch === 'function') p.catch(() => {});
+		} catch {}
+	}
+	document.querySelectorAll('[data-meow]').forEach((el) => {
+		el.addEventListener('click', playMeow);
+		el.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				playMeow();
+			}
+		});
+	});
+	</script>
 
 		<section class="bg-black text-white py-10 px-4 pt-0 relative">
 			<h1 class="text-center font-karim text-6xl md:text-[8.5rem] mb-10 md:mb-8">FAQs</h1>
-			<img src="/asset2.webp" class="hidden md:block absolute w-[25%] right-5 bottom-[300px]" alt="horus">
-			
-			<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-12 text-left">
-				<div class="flex flex-col gap-y-10 md:gap-y-12">
+			<img src="/asset2.webp" class="hidden md:block absolute w-[25%] right-5 bottom-[300px] shake-on-hover" alt="horus" tabindex="0">			
+			<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-12 text-left">				<div class="flex flex-col gap-y-10 md:gap-y-12">
 					<div>
 						<h2 class="font-karim text-3xl md:text-5xl font-bold mb-3">What is Hack Club?</h2>
 						<p class="font-futura text-lg md:text-2xl font-normal leading-tight">
@@ -240,8 +269,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 
 				<div class="flex flex-col gap-y-10 md:gap-y-12 relative">
-					<div class="absolute -left-8 top-0 bottom-0 w-px bg-white/20 hidden md:block"></div>
-					<div>
+<div class="absolute left-[-32px] top-0 bottom-0 w-px bg-white/20 hidden md:block"></div>					<div>
 						<h2 class="font-karim text-3xl md:text-5xl font-bold mb-3">How do I qualify?</h2>
 						<p class="font-futura text-lg md:text-2xl font-normal leading-tight">
 							There are 3 simple steps:<br>
@@ -265,18 +293,31 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 		</section>
-		<footer class="w-screen relative left-1/2 -translate-x-1/2 flex flex-col items-center mt-10">
-			<img src="/asset3.webp" alt="footer decoration" class="relative z-20 w-[100%] md:w-[50%] mb-4 md:mb-8">
-			
-			<div class="relative w-full flex justify-center items-center pt-32 pb-20 md:pt-48 md:pb-24 lg:pt-64 z-10">
-					<img src="/footer.webp" alt="footer bg decoration" class="hidden md:block absolute right-0 bottom-0 w-[80%] md:w-[72%] lg:w-[56%] z-0 pointer-events-none object-right-bottom">
-				
-				<div class="relative z-10 flex flex-col items-center -mt-25 md:-mt-50 px-4">
-					<p class="font-karim text-xl md:text-3xl font-bold text-center">made with love by teens at hack club</p>
-					<p class="font-futura text-sm md:text-lg mt-2 text-center text-white/80">Hack Club is a 501(c)(3) nonprofit built by teens for teens.</p>
-				</div>
-			</div>
-		</footer>
+		<section class="w-screen relative left-1/2 -translate-x-1/2 flex flex-col items-center mt-10">
+			<img src="/asset3.webp" alt="footer decoration" class="relative z-20 w-[100%] md:w-[50%]">
+		</section>
+		<footer class="w-full">
+  <div class="relative w-full overflow-hidden">
+    <img
+      src="/footer.webp"
+      alt="footer bg decoration"
+      class="hidden md:block absolute right-0 bottom-0 w-[80%] md:w-[72%] lg:w-[56%] z-0 pointer-events-none object-right-bottom"
+    />
+    <div class="relative z-10 min-h-[320px] md:min-h-[420px] lg:min-h-[520px] flex items-end">
+      <div class="px-6 pb-10 md:px-10 md:pb-12 max-w-[50rem] text-left">
+        <h1 class="font-karim text-4xl md:text-[9.5rem] leading-[0.92] mb-5">
+          Join us in Egypt!
+        </h1>
+        <p class="font-futura text-xl md:text-3xl leading-tight">
+          made with &lt;3  by teens @ hack club
+        </p>
+        <p class="font-futura text-base md:text-xl mt-2 text-white/80 leading-snug">
+          hack club is a 501(c)(3) nonprofit built by teens for teens.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 	</main>
 </Layout>
