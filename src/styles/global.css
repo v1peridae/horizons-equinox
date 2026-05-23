@@ -95,7 +95,7 @@
 }
 
 .cat-click {
-  width: clamp(400px, 5vw, 70px);
+  width: clamp(12rem, 72vw, 28rem);
   height: auto;
   cursor: pointer;
   user-select: none;

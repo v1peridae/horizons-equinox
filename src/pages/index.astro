@@ -3,20 +3,20 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<header class="text-white relative min-h-screen flex flex-col justify-center align-center py-16 md:py-24 pb-36 md:pb-40">
+	<header class="text-white relative h-screen flex flex-col justify-center items-center overflow-hidden px-4 py-8 md:py-12">
 		<img class="absolute inset-0 w-full h-full object-cover z-0" src="/header_bg.webp" alt="Horizons Equinox Background" />
 		<div class="absolute inset-0 bg-linear-to-t from-black via-black/83 to-transparent z-0"></div>
 
-		<div class="relative z-10 w-full text-center px-4 mt-8 md:mt-12 hero-boot">
-<img class="w-3/4 md:w-1/2 mx-auto mb-4 shake-logo" src="/equinox_logo.webp" alt="Horizons Equinox Logo" tabindex="0"/>
+		<div class="relative z-10 w-full max-w-4xl text-center hero-boot">
+<img class="w-[min(85vw,28rem)] md:w-1/2 mx-auto mb-3 md:mb-4 shake-logo" src="/equinox_logo.webp" alt="Horizons Equinox Logo" tabindex="0"/>
 			<div class="text-white">
-				<h1 class="font-futura text-2xl md:text-[3rem] md:leading-tight font-bold mb-2 md:mb-4">August 14-16 @ The GrEEK Campus, Cairo, Egypt</h1>
-				<h2 class="font-futura text-lg md:text-3xl mt-2 font-normal">Code for 35 hours, <br class="hidden md:block" /> Get invited to a 3-day hackathon adventure</h2>
+				<h1 class="font-futura text-xl sm:text-2xl md:text-[3rem] md:leading-tight font-bold mb-2 md:mb-4 px-1">August 14-16 @ The GrEEK Campus, CAIRO, EGYPT</h1>
+				<h2 class="font-futura text-base sm:text-lg md:text-3xl mt-2 font-normal">Code for 35 hours, <br class="hidden sm:block" /> Get invited to a 3-day hackathon adventure</h2>
 			</div>
 
 			<div class="relative mt-4 md:mt-8 flex justify-center">
   <div class="p-0.5 rounded-full bg-[#EC7A0F] inline-block">
-    <a href="https://horizons.hackclub.com" class="font-futura text-xl md:text-2xl font-bold bg-black text-[#ec7a0f] px-8 md:px-14 py-2 rounded-full flex items-center justify-center w-full h-full relative z-10">
+    <a href="https://horizons.hackclub.com" class="font-futura text-lg sm:text-xl md:text-2xl font-bold bg-black text-[#ec7a0f] px-6 sm:px-8 md:px-14 py-2 rounded-full flex items-center justify-center w-full h-full relative z-10">
       get started!
     </a>
   </div>
@@ -28,10 +28,10 @@ import Layout from '../layouts/Layout.astro';
 		<main id="intro" class="bg-black text-white px-4 pt-12 md:pt-10 pb-0 text-center relative overflow-hidden">
 
 		<section class="max-w-5xl mx-auto relative px-4">
-			<img src="/asset4.webp" alt="ankh" class="hidden md:block absolute -left-30 top-40 w-[24%] shake-on-hover" tabindex="0">			<p class="font-futura text-2xl md:text-5xl leading-snug md:leading-tight mb-10 md:mb-16">
+			<img src="/asset4.webp" alt="ankh" class="hidden md:block absolute -left-30 top-40 w-[24%] shake-on-hover" tabindex="0">			<p class="font-futura text-xl sm:text-2xl md:text-5xl leading-snug md:leading-tight mb-10 md:mb-16">
 				This August, we are bringing together 60+ teen coders from all around the world to join us for a free 3-day hackathon adventure in Egypt, <b>Horizons Equinox</b>.
 			</p>
-			<h1 class="font-karim text-6xl md:text-[9.5rem] py-0 mb-2 md:mb-0 text-center">
+			<h1 class="font-karim text-5xl sm:text-6xl md:text-[9.5rem] py-0 mb-2 md:mb-0 text-center break-words">
 				All for free!
 			</h1>
 			<p class="font-futura text-lg md:text-2xl leading-tight mb-12 md:mb-16">
@@ -42,14 +42,14 @@ import Layout from '../layouts/Layout.astro';
 
 
 <section class="px-4">
-  <div class="relative w-full md:w-[70%] mx-auto">
-    <img src="/background.png" alt="how to qualify" class="w-full block select-none pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08] hover:-translate-y-2" />
+  <div class="relative w-full md:w-[70%] mx-auto min-h-[240px] sm:min-h-[280px] md:min-h-0">
+    <img src="/background.webp" alt="how to qualify" class="w-full block select-none pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08] hover:-translate-y-2" />
     <div class="absolute inset-x-0 top-0 flex justify-center">
       <div class="relative w-full">
-       <img src="/signup.png" alt="sign up" class="absolute left-0 top-0 block w-[70%] select-none pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08] hover:-translate-y-2"/>
+       <img src="/signup.webp" alt="sign up" class="absolute left-0 top-0 block w-[70%] select-none pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08] hover:-translate-y-2"/>
 
 <img
-  src="/codefor.png"
+  src="/codefor.webp"
   alt="code for 35"
   class="absolute right-0 top-0 w-[50%] -translate-y-3 block select-none pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08] hover:-translate-y-2"/></div>
     </div>
@@ -57,13 +57,13 @@ import Layout from '../layouts/Layout.astro';
 </section>
 
 		<section class="max-w-6xl mx-auto mb-12 py-10 relative px-4">
-			<h1 class="text-center font-karim text-6xl md:text-[8.5rem] mb-0 md:mb-0 leading-tight">previous events</h1>
+			<h1 class="text-center font-karim text-5xl sm:text-6xl md:text-[8.5rem] mb-0 md:mb-0 leading-tight break-words">previous events</h1>
 				
 			<div id="events-scroll-container" class="w-screen relative left-1/2 -translate-x-1/2 overflow-x-auto overflow-y-hidden snap-x snap-mandatory no-scrollbar py-4">
 
 	<div id="events-track" class="flex gap-6 md:gap-12 w-max items-start">
 
-		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+		<div class="w-[88vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-48 sm:pb-56 md:pb-60">
 			<a href="https://daydream.hackclub.com" class="w-full shadow-xl">
 				<img src="new-images/daydream.webp" alt="Daydream" class="w-full aspect-[3/2] object-cover bg-black block" />
 			</a>
@@ -75,7 +75,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</div>
 
-		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+		<div class="w-[88vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-48 sm:pb-56 md:pb-60">
 			<a href="https://shipwrecked.hackclub.com" class="w-full shadow-xl">
 				<img src="new-images/shipwrecked.webp" alt="Shipwrecked" class="w-full aspect-[3/2] object-cover bg-black block" />
 			</a>
@@ -87,7 +87,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</div>
 
-		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+		<div class="w-[88vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-48 sm:pb-56 md:pb-60">
 			<a href="https://parthenon.hackclub.com" class="w-full shadow-xl">
 				<img src="new-images/parthenon.webp" alt="Parthenon" class="w-full aspect-[3/2] object-cover bg-black block" />
 			</a>
@@ -99,7 +99,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</div>
 
-		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+		<div class="w-[88vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-48 sm:pb-56 md:pb-60">
 			<a href="https://overglade.hackclub.com" class="w-full shadow-xl">
 				<img src="new-images/overglade.webp" alt="Overglade" class="w-full aspect-[3/2] object-cover bg-black block" />
 			</a>
@@ -111,7 +111,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</div>
 
-		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+		<div class="w-[88vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-48 sm:pb-56 md:pb-60">
 			<a href="https://undercity.hackclub.com" class="w-full shadow-xl">
 				<img src="new-images/undercity.webp" alt="Undercity" class="w-full aspect-[3/2] object-cover bg-black block" />
 			</a>
@@ -123,7 +123,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</div>
 
-		<div class="w-[92vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-56 md:pb-60">
+		<div class="w-[88vw] sm:w-[85vw] md:w-[800px] shrink-0 snap-center flex flex-col items-center md:-rotate-2 relative pb-48 sm:pb-56 md:pb-60">
 			<a href="https://juice.hackclub.com" class="w-full shadow-xl">
 				<img src="new-images/juice.webp" alt="Juice" class="w-full aspect-[3/2] object-cover bg-black block" />
 			</a>
@@ -139,107 +139,21 @@ import Layout from '../layouts/Layout.astro';
 </div>
 		</section>
 
+		<img src="/cats.webp" alt="Cats" class="cat-click mx-auto mb-6 md:mb-2" data-meow tabindex="0" />
+		<audio id="meow-audio" preload="auto">
+			<source src="/audio/meow.mp3" type="audio/mpeg" />
+		</audio>
+
 		<script>
-			document.addEventListener("DOMContentLoaded", () => {
-				const scrollContainer = document.getElementById('events-scroll-container');
-				const track = document.getElementById('events-track');
-				const originalCards = Array.from(track.children);
-				originalCards.forEach(card => track.appendChild(card.cloneNode(true)));
-				originalCards.forEach(card => track.appendChild(card.cloneNode(true)));
-				const arrow = document.getElementById('arrow');
+			import { initEventsScroll } from '../scripts/events-scroll';
+			import { initMeow } from '../scripts/meow';
 
-				let autoScrollInterval;
-				let isJumping = false;
-
-				arrow?.addEventListener('click', () => {
-					document.getElementById('intro')?.scrollIntoView({ behavior: 'smooth' });
-				})
-
-				function getSetWidth() {
-					return track.scrollWidth / 3;
-				}
-
-				requestAnimationFrame(() => {
-					scrollContainer.scrollLeft = getSetWidth();
-				});
-
-				scrollContainer.addEventListener('scroll', () => {
-					if (isJumping) return;
-
-					const setWidth = getSetWidth();
-
-					if (scrollContainer.scrollLeft <= setWidth * 0.5) {
-						isJumping = true;
-						scrollContainer.style.scrollSnapType = 'none';
-						scrollContainer.scrollLeft += setWidth;
-
-						requestAnimationFrame(() => {
-							scrollContainer.style.scrollSnapType = '';
-							isJumping = false;
-						});
-					}
-					else if (scrollContainer.scrollLeft >= setWidth * 2.5) {
-						isJumping = true;
-						scrollContainer.style.scrollSnapType = 'none';
-						scrollContainer.scrollLeft -= setWidth;
-
-						requestAnimationFrame(() => {
-							scrollContainer.style.scrollSnapType = '';
-							isJumping = false;
-						});
-					}
-				});
-
-				function startAutoScroll() {
-					autoScrollInterval = setInterval(() => {
-						const cardWidth = originalCards[0].offsetWidth;
-						const gap = window.innerWidth > 768 ? 48 : 24;
-
-						scrollContainer.scrollBy({ left: cardWidth + gap, behavior: 'smooth' });
-					}, 3000);
-				}
-
-				function stopAutoScroll() {
-					clearInterval(autoScrollInterval);
-				}
-
-				scrollContainer.addEventListener('mouseenter', stopAutoScroll);
-				scrollContainer.addEventListener('mouseleave', startAutoScroll);
-				scrollContainer.addEventListener('touchstart', stopAutoScroll, { passive: true });
-				scrollContainer.addEventListener('touchend', startAutoScroll);
-
-				startAutoScroll();
-			});
+			initEventsScroll();
+			initMeow();
 		</script>
 
-		<img src="/cats.webp" alt="Cats" class="cat-click mx-auto mb-6 md:mb-2" data-meow tabindex="0" />
-<audio id="meow-audio" preload="auto">
-	<source src="/audio/meow.mp3" type="audio/mpeg" />
-</audio>
-
-<script is:inline>
-	const audio = document.getElementById('meow-audio');
-	function playMeow() {
-		if (!audio) return;
-		try {
-			audio.currentTime = 0;
-			const p = audio.play();
-			if (p && typeof p.catch === 'function') p.catch(() => {});
-		} catch {}
-	}
-	document.querySelectorAll('[data-meow]').forEach((el) => {
-		el.addEventListener('click', playMeow);
-		el.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				playMeow();
-			}
-		});
-	});
-	</script>
-
 		<section class="bg-black text-white py-10 px-4 pt-0 relative">
-			<h1 class="text-center font-karim text-6xl md:text-[8.5rem] mb-10 md:mb-8">FAQs</h1>
+			<h1 class="text-center font-karim text-5xl sm:text-6xl md:text-[8.5rem] mb-10 md:mb-8 break-words">FAQs</h1>
 			<img src="/asset2.webp" class="hidden md:block absolute w-[25%] right-5 bottom-[300px] shake-on-hover" alt="horus" tabindex="0">			
 			<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-12 text-left">				<div class="flex flex-col gap-y-10 md:gap-y-12">
 					<div>
@@ -290,17 +204,16 @@ import Layout from '../layouts/Layout.astro';
 
 
 
-		<section class="w-full flex flex-col items-center">
-			<img src="/asset3.webp" alt="footer decoration" class="relative z-20 w-full max-w-[600px] md:max-w-none md:w-[50%] mt-6 mb-4 md:mb-8"/>
-  <p class="font-futura text-xl md:text-4xl leading-snug md:leading-tight text-center px-20 mx-20">
+		<section class="w-full flex flex-col items-center mb-16 md:mb-24">
+			<img src="/asset3.webp" alt="footer decoration" class="relative z-20 w-full max-w-[600px] md:max-w-none md:w-[50%] mt-6 mb-4 md:mb-8 px-4"/>
+  <p class="font-futura text-lg sm:text-xl md:text-4xl leading-snug md:leading-tight text-center px-4 sm:px-8 md:px-16 max-w-4xl">
     Create something new, get to see the pyramids of Giza up-close, code with new friends,
     ride a cruise down the Nile, and get immersed in Egyptian culture all in the span of 3 days!
   </p>
 
   <a href="https://horizons.hackclub.com?utm_source=equinoxsite" target="_blank" rel="noopener noreferrer" class="pointer-events-auto transition-transform duration-200 ease-out will-change-transform hover:scale-[1.08]">
-    <img src="/calltoaction1.png" alt="sign up" class="relative z-20 w-[80%] max-w-[520px] md:w-[50%] mx-auto mt-20"/>
+    <img src="/calltoaction1.webp" alt="sign up" class="relative z-20 w-[90%] sm:w-[80%] max-w-[520px] md:w-[50%] mx-auto mt-10 sm:mt-16 md:mt-20"/>
   </a>
-  <img src="/asset1.webp" alt="footer decoration" class="relative z-20 w-full max-w-[600px] md:max-w-none md:w-[50%] mt-16"/>
 </section>
 
 		<footer class="w-full">
@@ -311,11 +224,12 @@ import Layout from '../layouts/Layout.astro';
       class="hidden md:block absolute right-0 bottom-0 w-[80%] md:w-[72%] lg:w-[56%] z-0 pointer-events-none object-bottom-right"
     />
     <div class="relative z-10 min-h-[320px] md:min-h-[420px] lg:min-h-[520px] flex items-end">
-      <div class="px-6 pb-6 md:px-6 md:pb-12 max-w-200 text-left">
-        <h1 class="font-karim text-3xl md:text-[8rem] leading-[0.8] mb-10">
+      <div class="px-4 sm:px-6 pb-6 md:pb-12 max-w-200 text-left">
+        <h1 class="font-karim text-4xl sm:text-5xl md:text-[8rem] leading-[0.9] md:leading-[0.8] mb-6 md:mb-10">
           See you in Egypt!
         </h1>
-        <p class="font-futura text-xl md:text-3xl leading-tight">
+			<img src="/asset1.webp" alt="footer decoration" class="relative z-20 w-full max-w-[600px] md:max-w-none md:w-[70%] px-10 md:px-10" />
+        <p class="font-futura text-xl md:text-3xl leading-tight mt-10">
           made with &lt;3  by teens @ hack club
         </p>
         <p class="font-futura text-base md:text-xl mt-2 text-white/80 leading-snug">
